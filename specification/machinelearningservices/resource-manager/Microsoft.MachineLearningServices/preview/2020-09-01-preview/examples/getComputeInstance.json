@@ -49,6 +49,39 @@
                 "endpointUri": "https://compute123.eastus2.azureml.net/jupyter"
               }
             ],
+            "dataMountSettings": [
+              {
+                "source": "datastore1",
+                "sourceType": "Datastore",
+                "mountName": "DatastoreTest",
+                "mountAction": "Mount",
+                "createdBy": "foo bar",
+                "mountPath": "/mnt/batch/tasks/shared/LS_root/mounts/clusters/compute123/Data/Datastore/DatastoreTest",
+                "mountedOn": "2020-09-26T22:28:08.327Z",
+                "mountState": "Mounted"
+              },
+              {
+                "source": "faba1249-90ed-411f-a186-933239534545",
+                "sourceType": "Dataset",
+                "mountName": "DatasetTest",
+                "mountAction": "Mount",
+                "createdBy": "foo bar",
+                "mountPath": "/mnt/batch/tasks/shared/LS_root/mounts/clusters/compute123/Data/Dataset/DatasetTest",
+                "mountedOn": null,
+                "mountState": "MountFailed",
+                "error": "User does not have access to the storage",
+              },
+              {
+                "source": "https://storagesamples.blob.core.windows.net/sample-container/data.txt",
+                "sourceType": "URI",
+                "mountName": "sampledata",
+                "mountAction": "Mount",
+                "createdBy": "foo bar",
+                "mountPath": "/mnt/batch/tasks/shared/LS_root/mounts/clusters/compute123/Data/URI/sampledata",
+                "mountedOn": "2020-09-26T22:28:08.327Z",
+                "mountState": "Mounted"
+              }
+            ],
             "errors": null,
             "state": "Running"
           }
